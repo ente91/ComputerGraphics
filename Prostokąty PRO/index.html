@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<scirpt>
+    function createRect(mx,my,mz,dax,day,daz,dbx,dby,dbz)
+    {
+      p1x = mx;             p1y = my;             p1z = mz;
+      p2x = mx + dax;       p2y = my + day;       p2z = mz + daz;
+      p3x = mx + dbx;       p3y = my + dby;       p3z = mz + dbz;
+      p4x = mx + dax + dbx; p4y = my + day + dby; p4z = mz + daz + dbz;
+      
+      let vertexPosition = [p1x,p1y,p1z, p2x,p2y,p2z, p4x,p4y,p4z,  //Pierwszy trójkąt
+                            p1x,p1y,p1z, p4x,p4y,p4z, p3x,p3y,p3z]; //Drugi trójkąt
+                            
+      return vertexPosition;
+    }
+    
+</scirpt>
+
+
+</html>
